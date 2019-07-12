@@ -65,3 +65,6 @@ typings/
 
 # Your config file
 config.json
+
+# Ignore files built by webpack
+public/bundle*
