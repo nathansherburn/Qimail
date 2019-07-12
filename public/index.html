@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Qimail</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#603cba" />
+    <meta name="description" content="Balance your workflow." />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Assistant:200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="mdc-typography">
+    <div class="account-bar">
+      <button class="mdc-icon-button material-icons">
+        more_vert
+      </button>
+      <div class="mdc-menu mdc-menu-surface">
+        <ul
+          class="mdc-list"
+          role="menu"
+          aria-hidden="true"
+          aria-orientation="vertical"
+          tabindex="-1"
+        >
+          <div id="user-email" class="mdc-typography--subtitle2"></div>
+          <li class="mdc-list-item" role="menuitem">
+            <span class="mdc-list-item__text">Sign Out</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 class="mdc-typography--headline2">Qimail</h1>
+
+      <button
+        id="authorize-button"
+        style="display: none;"
+        class="add-task-button mdc-button mdc-button--unelevated"
+      >
+        Authorize
+      </button>
+
+      <div id="new-task-form">
+        <div
+          class="mdc-text-field mdc-text-field--outlined mdc-text-field--no-label"
+        >
+          <input
+            id="task"
+            placeholder="Task"
+            type="text"
+            name="task"
+            class="mdc-text-field__input"
+            aria-label="Label"
+          />
+          <div class="mdc-notched-outline">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__trailing"></div>
+          </div>
+        </div>
+
+        <div
+          class="mdc-text-field mdc-text-field--textarea mdc-text-field--no-label"
+        >
+          <textarea
+            id="details"
+            name="details"
+            class="mdc-text-field__input"
+            rows="8"
+            cols="40"
+            aria-label="Label"
+            placeholder="Details"
+          ></textarea>
+          <div class="mdc-notched-outline">
+            <div class="mdc-notched-outline__leading"></div>
+            <div class="mdc-notched-outline__trailing"></div>
+          </div>
+        </div>
+
+        <button id="add-task-button" class="mdc-button mdc-button--unelevated">
+          Add Task
+        </button>
+      </div>
+    </div>
+
+    <script src="/bundle.js" async></script>
+  </body>
+</html>

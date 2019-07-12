@@ -1,0 +1,5 @@
+{
+  "DEV_API_KEY": "<Your development API Key>", 
+  "PROD_API_KEY": "<Your production API Key>", 
+  "OAUTH_CLIENT_ID": "<Your OAuth Client ID>" 
+}

@@ -1,0 +1,77 @@
+$mdc-theme-primary: #611a63;
+$mdc-theme-secondary: #611a63;
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+$rtl-reflexive: false;
+$radius: 28px;
+
+@import "@material/button/mdc-button";
+@import "@material/textfield/mdc-text-field";
+@import "@material/typography/mdc-typography";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
+
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+#details, #task {
+  padding: 24px;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+#add-task-button {
+  height: 56px;
+  @include mdc-shape-radius($radius);
+}
+
+.mdc-text-field {
+  margin-bottom: 32px;
+  @include mdc-text-field-outline-shape-radius($radius, $rtl-reflexive);
+}
+
+.mdc-typography--headline2 {
+  color: $mdc-theme-primary;
+}
+
+.account-bar {
+  text-align: right;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 420px;
+  align-items: center;
+}
+
+#user-email {
+  margin: 0 16px;
+  color: $mdc-theme-primary;
+  font-weight: bold;
+}
+
+.mdc-typography--headline2 {
+  font-family: "Assistant", sans-serif;
+}
+
+#new-task-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mdc-menu-surface {
+  @include mdc-menu-surface-shape-radius(12px, $rtl-reflexive)
+}
